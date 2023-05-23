@@ -1,0 +1,192 @@
+body {
+    max-width: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(133deg, #0b0c0c, #360eef, #57f00a, #e2ed11, #ad11ed);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 17%}
+    50%{background-position:100% 84%}
+    100%{background-position:0% 17%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 17%}
+    50%{background-position:100% 84%}
+    100%{background-position:0% 17%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 17%}
+    50%{background-position:100% 84%}
+    100%{background-position:0% 17%}
+}
+
+.conteudo{
+    
+    
+    margin-top: 25%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 9);
+    max-width: 800px;
+    max-height: 420px;
+    min-width: 370px;
+    min-height: 360px;
+    border-radius: 0px 90px 0px 90px;
+    z-index: 2;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 123.5px );
+    color: aliceblue;
+    border: rgb(244, 242, 242) solid 1px   
+    
+}
+
+
+.conteudo h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.conteudo form{
+    text-align: center;
+}.conteudo2{
+    margin-top: -2px;
+    background-color:none;
+    max-height: 220px;
+    
+}.btnAcrecentar{
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #000;
+}
+.btnUpload{
+    padding-top: 10px;
+    border: none;
+    color: #000;
+    
+    
+}.btnEnviar{
+    background-color: #eaf4eb;
+    border: none;
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    color: #000;
+    
+}.btnEnviar:hover{
+    background-color: #0eef3b ; 
+    color: #fff;  
+}.btnDownload{
+    align-items: center;
+    text-align: center;
+    background-color: #efedf4;
+    border: none;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    margin-top: -50px;
+    margin-left: 250px;
+    align-items: center;
+   
+    
+    
+    
+  
+    
+}h2{
+    
+    text-align: center;
+    margin-right: 120px;   
+    padding-right: 0px;
+
+    
+}div#conteudo input{
+    border-radius: 30px ;
+} .btnDownload:hover{
+    background-color: #0eef3b;
+    color: #000;
+}div#conteudo input#btnF{
+    color: #0b0b0b;
+    border-radius: 0px;
+    
+}.rodape{
+    position: absolute;
+    margin-bottom: -780px;
+    padding-top: 30px;
+    margin-right: 20px;
+    
+}.rodape h3{
+    text-align: center;
+    color: #fff;
+    margin-top: -10px;
+    margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    
+}.btnProximo{
+    border: none;
+    width:40px;
+    height: 30px;
+    font-size: 6pt;
+    font-style:italic;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-left: -45px;
+    margin-top: 200px;
+    position: absolute;
+    border-radius: 209px ;
+    z-index: 2;
+    background-color: #3bda06;
+    color: #fff;
+    font-weight: bold;
+}.btnProximo:hover{
+    width:90px;
+    height: 40px;
+    margin-left: -107px;
+    font-size: 12pt;
+    margin-top: 190px;
+    color: #fff;
+    font-weight: bold;
+  
+}.btnAnterior{
+    border: none;
+    width:55px;
+    height: 30px;
+    font-size: 6pt;
+    font-style:italic;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 245px;
+    margin-top: -70px;
+    position: absolute;
+    border-radius: 209px ;
+    z-index: 2;
+    background-color: #3bda06;
+    color: #fff;
+    font-weight: bold;
+
+}
+.btnAnterior:hover{
+    width:90px;
+    height: 40px;
+    color: #fff;
+    font-size: 10pt;
+    margin-top: -70px;
+    font-weight: bold;
+}h1{
+    margin-left: 20px;
+}

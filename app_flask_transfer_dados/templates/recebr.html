@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/block/estilo.css">
+    
+    <title>Document</title>
+</head>
+<script>
+   function mudarcor(){
+    document.getElementById("btn1").Style.color = "blue"
+    
+    
+   }
+</script>
+<body>
+   
+
+   {% block conteudo%}
+   <div id="conteudo" class="conteudo"> 
+    <h1>File Download</h1>
+    <p><a href="{{url_for('upload_file')}}"><input type="button" value="<PREVIOUS" class="btnAnterior"  ></a></p>
+        <!--<img src="{{'/static/'+ teste}}" alt="">
+        <img src="{{'/static/'+ teste1}}" alt="">-->
+        <h2>{{teste}}</h2>
+        <a href="{{'/static/'+ teste}}" id="btn1" download="arquivo"><input type="button" value="Download" class="btnDownload"  onclick="mudarcor()"> </a>
+
+        <h2>{{teste1}}</h2>
+        <a href="{{'/static/'+ teste1}}" download="arquivo"><input type="button" value="Download" class="btnDownload" > </a>
+
+        <h2>{{teste2}}</h2>
+        <a href="{{'/static/'+ teste2}}" download="arquivo"><input type="button" value="Download" class="btnDownload" > </a>
+
+        <h2>{{teste3}}</h2>
+        <a href="{{'/static/'+ teste3}}" download="arquivo"><input type="button" value="Download" class="btnDownload" ></a>
+
+        <h2>{{teste4}}</h2>
+        <a  href="{{'/static/'+ teste4}}" download="arquivo"><input type="button" value="Download" class="btnDownload"  ></a>
+            
+       
+    </div>
+   
+    <footer class="rodape" id="rodape">
+        <figure >
+            <img src="./static/block/nerd.png" id="nerd" alt="">
+            <h3>Version 1.0</h3>
+            
+        </figure>
+        
+        </footer>
+{%endblock%}
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Upload File</title>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0">
+            <link rel="stylesheet" href="./static/block/estilo.css">
+            
+
+        </head>
+    </head>
+    <script>
+    
+    function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == 'none')
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+
+</script>
+    <body>
+
+        <div id="conteudo" class="conteudo">
+            
+                
+             
+
+            <h1>File Upload</h1>
+            <form method="POST" action="" enctype="multipart/form-data">
+                <p><input type="file" name="file" class="btnUpload" id="btnF"></p>
+                <div class="conteudo2" id="conteudo2" style="display:none">
+                    <p><input type="file" name="file1" class="btnUpload" id="btnF"></p>
+                    <p><input type="file" name="file2" class="btnUpload" id="btnF"></p>
+                    <p><input type="file" name="file3" class="btnUpload" id="btnF"></p>
+                    <p><input type="file" name="file4" class="btnUpload" id="btnF"></p>
+                </div>
+                <p><input type="button" value="Incuir arquivos" class="btnAcrecentar"
+                        onclick="Mudarestado('conteudo2')"></p>
+                <p><input type="submit" value="Enviar" class="btnEnviar"></p>
+                <p><a href="{{url_for('receber')}}"></a></p>
+                
+            </form>
+            
+        </div>
+        <p><a href="{{url_for('receber')}}"><input type="button" value="NEXT >" class="btnProximo"></a></p>
+       
+        <footer class="rodape" id="rodape">
+        <figure >
+            <img src="./static/block/nerd.png" id="nerd" alt="">
+            <h3>Version 1.0</h3>
+            
+        </figure>
+        
+        </footer>
+    </body>
+</html>
